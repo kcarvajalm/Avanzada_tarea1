@@ -22,6 +22,11 @@ namespace Tarea1
         public decimal Sueldo { get => sueldo; set => sueldo = value; }
         public string Usuario { get => usuario; set => usuario = value; }
         public string Contraseña { get => contraseña; set => contraseña = value; }
+        internal Sede Sede { get => sede; set => sede = value; }
 
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }

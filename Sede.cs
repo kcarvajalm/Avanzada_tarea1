@@ -18,5 +18,10 @@ namespace Tarea1
 
         public int Id { get => id; set => id = value; }
         public string Descripcion { get => descripcion; set => descripcion = value; }
+
+        public override string ToString()
+        {
+            return "ID: " + id + " - " + "Descripcion: " + descripcion;
+        }
     }
 }
