@@ -14,9 +14,11 @@ namespace Tarea1
             estudiante.Nombre = "Kenneth";
             estudiante.Apellido_1 = "Carvajal";
             estudiante.Apellido_2 = "Mesen";
-            estudiante.IdEstudiante = 1;
+            estudiante.IdEstudiante = 192;
             estudiante.Genero = 'M';
             estudiante.Sede = sede;
+            estudiante.FechaNacimiento = new DateTime(1983, 9, 10);
+
 
             Console.WriteLine(estudiante.ToString());
 

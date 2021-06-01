@@ -26,10 +26,13 @@ namespace Tarea1
         public char Genero { get => genero; set => genero = value; }
         public Sede Sede { get => sede; set => sede = value; }
 
+
         public override string ToString()
         {
-            return "ID_Estudiante: " + idEstudiante + " - " + "fechaNacimiento: " + fechaNacimiento +
-                        " - " + "genero: " + genero + " - " + "sede: " + sede;
+            return base.ToString() + "ID_Estudiante: " + idEstudiante + " - " + "fechaNacimiento: " + fechaNacimiento +
+                        " - " + "genero: " + genero + " - " + "genero: " + genero;
         }
+
+
     }
 }
