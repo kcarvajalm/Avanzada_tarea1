@@ -4,7 +4,7 @@ namespace Tarea1
 {
     class Estudiante : Persona
     {
-        private int idEstudiante;
+        private int id;
         private DateTime fechaNacimiento;
         private char genero;
         private Sede sede;
@@ -13,15 +13,15 @@ namespace Tarea1
         {
         }
 
-        public Estudiante(int idEstudiante, DateTime fechaNacimiento, char genero, Sede sede)
+        public Estudiante(int id, DateTime fechaNacimiento, char genero, Sede sede)
         {
-            this.idEstudiante = idEstudiante;
+            this.id = id;
             this.fechaNacimiento = fechaNacimiento;
             this.genero = genero;
             this.sede = sede;
         }
 
-        public int IdEstudiante { get => idEstudiante; set => idEstudiante = value; }
+        public int Id { get => id; set => id = value; }
         public DateTime FechaNacimiento { get => fechaNacimiento; set => fechaNacimiento = value; }
         public char Genero { get => genero; set => genero = value; }
         public Sede Sede { get => sede; set => sede = value; }
@@ -29,8 +29,10 @@ namespace Tarea1
 
         public override string ToString()
         {
-            return base.ToString() + "ID_Estudiante: " + idEstudiante + " - " + "fechaNacimiento: " + fechaNacimiento +
-                        " - " + "genero: " + genero + " - " + "genero: " + genero;
+            return "ID_Estudiante: " + id + "\n"
+                    + base.ToString() + "\n"
+                    + "Fecha_Nacimiento: " + fechaNacimiento + " - " + "Genero: " + genero + "\n";
+            //"Sede: " + Sede.ToString();
         }
 
 
