@@ -21,7 +21,7 @@ namespace Tarea1
 
         public override string ToString()
         {
-            return "ID_Sede: " + id + " - " + "Descripcion_Sede: " + descripcion;
+            return "ID_Sede: " + id + " - " + "Descripcion_Sede: " + descripcion + "\n";
         }
     }
 }

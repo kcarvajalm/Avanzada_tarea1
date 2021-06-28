@@ -29,7 +29,7 @@ namespace Tarea1
 
         public override string ToString()
         {
-            return "ID_Curso: " + id + " - " + "Nombre_Curso: " + nombre + "Descripcion_Curso: " + descripcion;
+            return "ID_Curso: " + id + " - " + "Nombre_Curso: " + nombre  +" - " + "Descripcion_Curso: " + descripcion + "\n";
         }
     }
 
