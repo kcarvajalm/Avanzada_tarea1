@@ -29,4 +29,3 @@ C:\Users\kenne\Google Drive\UNED\Informatica\2021\II-2021\Avanzada\Avanzada_tare
 C:\Users\kenne\Google Drive\UNED\Informatica\2021\II-2021\Avanzada\Avanzada_tarea1\obj\Debug\net5.0\ref\Tarea1.dll
 C:\Users\kenne\Google Drive\UNED\Informatica\2021\II-2021\Avanzada\Avanzada_tarea1\obj\Debug\net5.0\Tarea1.pdb
 C:\Users\kenne\Google Drive\UNED\Informatica\2021\II-2021\Avanzada\Avanzada_tarea1\obj\Debug\net5.0\Tarea1.genruntimeconfig.cache
-C:\Users\kenne\Google Drive\UNED\Informatica\2021\II-2021\Avanzada\Avanzada_tarea1\obj\Debug\net5.0\Tarea1.csproj.AssemblyReference.cache
