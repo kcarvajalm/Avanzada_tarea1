@@ -1,8 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+ * Kenneth Carvajal Mesen
+ * 1-1183-0218
+ * Tarea 1 Programación Avanzada
+ * UNED II Cuatrimestre 2021
+ */
+
+
 
 namespace Tarea1
 {
@@ -29,7 +32,7 @@ namespace Tarea1
 
         public override string ToString()
         {
-            return "ID_Curso: " + id + " - " + "Nombre_Curso: " + nombre  +" - " + "Descripcion_Curso: " + descripcion + "\n";
+            return "ID_Curso: " + id + " - " + "Nombre_Curso: " + nombre + " - " + "Descripcion_Curso: " + descripcion + "\n";
         }
     }
 

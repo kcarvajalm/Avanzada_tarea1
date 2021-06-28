@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Kenneth Carvajal Mesen
+ * 1-1183-0218
+ * Tarea 1 Programación Avanzada
+ * UNED II Cuatrimestre 2021
+ */
+
+using System;
 
 namespace Tarea1
 {
@@ -202,7 +209,7 @@ namespace Tarea1
                     {
                         int index = Array.FindIndex(estudiantesArreglo, (x) => x != null && x.Id.Equals(conMatricula.Id));
                         estudiantesArreglo.SetValue(conMatricula, index);
-                        Console.WriteLine("\n***** Matricula Realizada ***** \n\n");
+                        Console.WriteLine("\n***** Matrícula Realizada ***** \n\n");
                         Console.ReadKey();
                     }
 
@@ -236,7 +243,7 @@ namespace Tarea1
                     {
                         int index = Array.FindIndex(profesArreglo, (x) => x != null && x.Id.Equals(conCurso.Id));
                         profesArreglo.SetValue(conCurso, index);
-                        Console.WriteLine("\n***** Asignacion correcta de curso ***** \n\n");
+                        Console.WriteLine("\n***** Asignación correcta de curso ***** \n\n");
                         Console.ReadKey();
                     }
 
@@ -324,7 +331,7 @@ namespace Tarea1
 
                 case "9":
                     Console.Clear();
-                    Console.WriteLine("\nUNIVERSISDA EDUCA\nGracias por utilizar el Sistema de Registro\n" +
+                    Console.WriteLine("\nUNIVERSIDAD EDUCA\nGracias por utilizar el Sistema de Registro\n" +
                         "Kenneth Carvajal\nTarea 1: Programación Avanzada\nUNED - II Cuatrimestre 2021 ");
                     Console.ReadKey();
                     return false;
@@ -339,23 +346,23 @@ namespace Tarea1
         {
             try
             {
-                Console.Write("Ingrese la identificacion de la Sede: ");
+                Console.Write("Ingrese la identificación de la Sede: ");
                 sede.Id = int.Parse(Console.ReadLine());
                 if (buscarSede(sede.Id) != null)
                 {
-                    Console.Write("Atencion!!!\n Ya existe una sede con esa Identificacion\npor favor vuelva a intentarlo ");
+                    Console.Write("Atencion!!!\n Ya existe una sede con esa identificación\npor favor vuelva a intentarlo ");
                     Console.ReadKey();
                     return null;
                 }
 
-                Console.Write("Ingrese la descripcion de la Sede: ");
+                Console.Write("Ingrese la descripción de la Sede: ");
                 sede.Descripcion = Console.ReadLine();
 
                 return sede;
             }
             catch (Exception)
             {
-                Console.Write("Atencion!!!\n Ha ingresado un dato incorrecto\npor favor vuelva a intentarlo ");
+                Console.Write("Atención!!!\n Ha ingresado un dato incorrecto\npor favor vuelva a intentarlo ");
                 Console.ReadKey();
                 return null;
 
@@ -369,11 +376,11 @@ namespace Tarea1
         {
             try
             {
-                Console.Write("Ingrese la identificacion del Estudiante: ");
+                Console.Write("Ingrese la identificación del Estudiante: ");
                 estudiante.Id = int.Parse(Console.ReadLine());
                 if (buscarEstudiante(estudiante.Id) != null)
                 {
-                    Console.Write("Atencion!!!\n Ya existe un estudiante con esa Identificacion\npor favor vuelva a intentarlo ");
+                    Console.Write("Atención!!!\n Ya existe un estudiante con esa Identificación\npor favor vuelva a intentarlo ");
                     Console.ReadKey();
                     return null;
                 }
@@ -388,7 +395,7 @@ namespace Tarea1
 
                 while (!estudiante.Genero.Equals('F') && !estudiante.Genero.Equals('M'))
                 {
-                    Console.Write("Ingrese el Genero del Estudiante (F / M): ");
+                    Console.Write("Ingrese el Género del Estudiante (F / M): ");
                     estudiante.Genero = char.Parse(Console.ReadLine());
                 }
 
@@ -403,7 +410,7 @@ namespace Tarea1
             }
             catch (Exception)
             {
-                Console.Write("Atencion!!!\n Ha ingresado un dato incorrecto\npor favor vuelva a intentarlo ");
+                Console.Write("Atención!!!\n Ha ingresado un dato incorrecto\npor favor vuelva a intentarlo ");
                 Console.ReadKey();
                 return null;
 
@@ -417,11 +424,11 @@ namespace Tarea1
         {
             try
             {
-                Console.Write("Ingrese la identificacion del Profesor: ");
+                Console.Write("Ingrese la identificación del Profesor: ");
                 profesor.Id = int.Parse(Console.ReadLine());
                 if (buscarProfesor(profesor.Id) != null)
                 {
-                    Console.Write("Atencion!!!\n Ya existe un profesor con esa Identificacion\npor favor vuelva a intentarlo ");
+                    Console.Write("Atención!!!\n Ya existe un profesor con esa Identificación\npor favor vuelva a intentarlo ");
                     Console.ReadKey();
                     return null;
                 }
@@ -452,7 +459,7 @@ namespace Tarea1
             }
             catch (Exception)
             {
-                Console.Write("Atencion!!!\n Ha ingresado un dato incorrecto\npor favor vuelva a intentarlo ");
+                Console.Write("Atención!!!\n Ha ingresado un dato incorrecto\npor favor vuelva a intentarlo ");
                 Console.ReadKey();
                 return null;
 
@@ -466,17 +473,17 @@ namespace Tarea1
         {
             try
             {
-                Console.Write("Ingrese la identificacion del Curso: : ");
+                Console.Write("Ingrese la identificación del Curso: : ");
                 curso.Id = int.Parse(Console.ReadLine());
                 if (buscarCurso(curso.Id) != null)
                 {
-                    Console.Write("Atencion!!!\n Ya existe una sede con esa Identificacion\npor favor vuelva a intentarlo ");
+                    Console.Write("Atención!!!\n Ya existe una sede con esa identificación\npor favor vuelva a intentarlo ");
                     Console.ReadKey();
                     return null;
                 }
                 Console.Write("Ingrese el nombre del Curso: ");
                 curso.Nombre = Console.ReadLine();
-                Console.Write("Ingrese la descripcion del Curso: ");
+                Console.Write("Ingrese la descripción del Curso: ");
                 curso.Descripcion = Console.ReadLine();
 
                 Console.Clear();
@@ -487,7 +494,7 @@ namespace Tarea1
             }
             catch (Exception)
             {
-                Console.Write("Atencion!!!\n Ha ingresado un dato incorrecto\npor favor vuelva a intentarlo ");
+                Console.Write("Atención!!!\n Ha ingresado un dato incorrecto\npor favor vuelva a intentarlo ");
                 Console.ReadKey();
                 return null;
 
@@ -512,7 +519,7 @@ namespace Tarea1
                     sedeMatricula = buscarSede(idSede);
                     if (sedeMatricula == null)
                     {
-                        Console.Write("Atencion!!!\n No existe uns sede con el Id indicado\npor favor vuelva a intentarlo ");
+                        Console.Write("Atención!!!\n No existe uns sede con el Id indicado\npor favor vuelva a intentarlo ");
                         Console.ReadKey();
 
                     }
@@ -527,7 +534,7 @@ namespace Tarea1
                     estudianteMatricula = buscarEstudiante(idEstudiante);
                     if (estudianteMatricula == null)
                     {
-                        Console.Write("Atencion!!!\n No existe un estudiante con el Id indicado\npor favor vuelva a intentarlo ");
+                        Console.Write("Atención!!!\n No existe un estudiante con el Id indicado\npor favor vuelva a intentarlo ");
                         Console.ReadKey();
 
                     }
@@ -543,7 +550,7 @@ namespace Tarea1
                     cursoMatricula = buscarCurso(idCurso);
                     if (cursoMatricula == null)
                     {
-                        Console.Write("Atencion!!!\n No existe un curso con el Id indicado\npor favor vuelva a intentarlo ");
+                        Console.Write("Atención!!!\n No existe un curso con el Id indicado\npor favor vuelva a intentarlo ");
                         Console.ReadKey();
                     }
                 }
@@ -552,7 +559,7 @@ namespace Tarea1
 
                 if (ultimoCursoEstidiante == -1)
                 {
-                    Console.Write("Atencion!!!\n El estudiante no puede matricular mas cursos\n");
+                    Console.Write("Atención!!!\n El estudiante no puede matricular mas cursos\n");
                     Console.ReadKey();
 
                     return null;
@@ -563,7 +570,7 @@ namespace Tarea1
 
                 Console.Clear();
 
-                Console.Write("Datos de la Matricula del Estudiante\n");
+                Console.Write("Datos de la Matrícula del Estudiante\n");
 
                 Console.Write(estudianteMatricula.ToString() + "\n"
                     + estudianteMatricula.Sede + "\n"
@@ -577,7 +584,7 @@ namespace Tarea1
             }
             catch (Exception)
             {
-                Console.Write("Atencion!!!\n Ha ingresado un dato incorrecto\npor favor vuelva a intentarlo ");
+                Console.Write("Atención!!!\n Ha ingresado un dato incorrecto\npor favor vuelva a intentarlo ");
                 Console.ReadKey();
                 return null;
 
@@ -602,7 +609,7 @@ namespace Tarea1
                     sedeMatricula = buscarSede(idSede);
                     if (sedeMatricula == null)
                     {
-                        Console.Write("Atencion!!!\n No existe uns sede con el Id indicado\npor favor vuelva a intentarlo ");
+                        Console.Write("Atención!!!\n No existe uns sede con el Id indicado\npor favor vuelva a intentarlo ");
                         Console.ReadKey();
 
                     }
@@ -617,7 +624,7 @@ namespace Tarea1
                     profeCurso = buscarProfesor(idProfesor);
                     if (profeCurso == null)
                     {
-                        Console.Write("Atencion!!!\n No existe un profesor con el Id indicado\npor favor vuelva a intentarlo ");
+                        Console.Write("Atención!!!\n No existe un profesor con el Id indicado\npor favor vuelva a intentarlo ");
                         Console.ReadKey();
 
                     }
@@ -633,7 +640,7 @@ namespace Tarea1
                     cursoMatricula = buscarCurso(idCurso);
                     if (cursoMatricula == null)
                     {
-                        Console.Write("Atencion!!!\n No existe un curso con el Id indicado\npor favor vuelva a intentarlo ");
+                        Console.Write("Atención!!!\n No existe un curso con el Id indicado\npor favor vuelva a intentarlo ");
                         Console.ReadKey();
                     }
                 }
@@ -642,7 +649,7 @@ namespace Tarea1
 
                 if (ultimoCursoProfesor == -1)
                 {
-                    Console.Write("Atencion!!!\n El profesor no se le pueden asignar mas cursos\n");
+                    Console.Write("Atención!!!\n El profesor no se le pueden asignar mas cursos\n");
                     Console.ReadKey();
 
                     return null;
@@ -653,7 +660,7 @@ namespace Tarea1
 
                 Console.Clear();
 
-                Console.Write("Datos de la Matricula del Estudiante\n");
+                Console.Write("Datos de la Matrícula del Estudiante\n");
 
                 Console.Write(profeCurso.ToString() + "\n"
                     + profeCurso.Sede + "\n"
@@ -667,7 +674,7 @@ namespace Tarea1
             }
             catch (Exception)
             {
-                Console.Write("Atencion!!!\n Ha ingresado un dato incorrecto\npor favor vuelva a intentarlo ");
+                Console.Write("Atención!!!\n Ha ingresado un dato incorrecto\npor favor vuelva a intentarlo ");
                 Console.ReadKey();
                 return null;
 

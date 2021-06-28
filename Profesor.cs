@@ -1,4 +1,10 @@
-﻿
+﻿/*
+ * Kenneth Carvajal Mesen
+ * 1-1183-0218
+ * Tarea 1 Programación Avanzada
+ * UNED II Cuatrimestre 2021
+ */
+
 namespace Tarea1
 {
     class Profesor : Persona
@@ -36,7 +42,7 @@ namespace Tarea1
             return "ID_Profesor: " + id + "\n"
                       + base.ToString() + "\n"
                       + "Sueldo: " + sueldo + " - " + "Usuario: " + usuario + " - " + "Contraseña: " + contraseña + "\n";
-                      // "Sede: " + Sede.ToString();
+            // "Sede: " + Sede.ToString();
         }
 
 

@@ -1,4 +1,9 @@
-﻿
+﻿/*
+ * Kenneth Carvajal Mesen
+ * 1-1183-0218
+ * Tarea 1 Programación Avanzada
+ * UNED II Cuatrimestre 2021
+ */
 
 namespace Tarea1
 {
